@@ -5,6 +5,7 @@
 	<groupId>aula</groupId>
 	<artifactId>calculadora</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 
 	<dependencies>
 		<dependency>
@@ -14,5 +15,23 @@
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
+<build>
+		<finalName>jogo-par-impar</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.11.0</version>
+				<configuration>
+					<source>21</source>
+					<target>21</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.2</version>
+			</plugin>
 
+		</plugins>
+	</build>
 </project>
